@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#B8D3D6</color>
+    <color name="white">#212121</color>
+    <color name="loss"> #FF5252</color>
+    <color name="gain">#66BB6A</color>
+    <color name="background">#263238</color>
+    <color name="secondary">#008EFF</color>
+</resources>

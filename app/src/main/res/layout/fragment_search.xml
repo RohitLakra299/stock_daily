@@ -43,12 +43,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:textColor="@color/black"
             android:checked="true"
             android:text="All" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_stocks"
             style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stocks" />
@@ -57,6 +59,7 @@
             android:id="@+id/chip_etfs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="ETF" />
 
@@ -64,6 +67,7 @@
             android:id="@+id/chip_equity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="Equity"
             />
@@ -71,6 +75,7 @@
             android:id="@+id/chip_mutual_fund"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="Mutual Fund"
             />

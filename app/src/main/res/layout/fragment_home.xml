@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E6F0F8"
+    android:background="@color/background"
     tools:context=".fragments.HomeFragment">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -16,7 +16,6 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
             app:title="Stock Today"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
@@ -46,7 +45,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomLayout"
         android:layout_width="0dp"
-        android:background="#E6F0F8"
+        android:background="@color/background"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Top Gainers"
-        android:backgroundTint="#008EFF"
-        android:textColor="@color/white"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/black"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnLosers"
@@ -72,8 +71,8 @@
         android:layout_height="wrap_content"
         android:text="Top Losers"
         android:elevation="10dp"
-        android:backgroundTint="#008EFF"
-        android:textColor="@color/white"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/black"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         app:layout_constraintStart_toEndOf="@+id/btnGainers"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="headingText">Dark theme enabled</string>
+    <string name="enableDarkTheme">Enable light theme</string>
+</resources>

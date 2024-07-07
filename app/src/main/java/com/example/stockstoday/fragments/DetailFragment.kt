@@ -166,16 +166,20 @@ class DetailFragment : Fragment() {
             granularity = 1f
             valueFormatter = IndexAxisValueFormatter(timeStamps)
             setLabelCount(6, true)
+            textColor = resources.getColor(R.color.black,null)
         }
         lineChart.axisLeft.axisMaximum = maxi+0.1f
         lineChart.axisLeft.axisMinimum = mini-0.1f
+        lineChart.axisLeft.textColor = resources.getColor(R.color.black,null)
         lineChart.xAxis.axisMaximum = timeStamps.size+0.1f
         val markerView = CustomMarker(requireContext().applicationContext, R.layout.marker_view)
         lineChart.marker = markerView
         lineChart.description.text = "Days"
+        lineChart.description.textColor = resources.getColor(R.color.black,null)
         lineChart.description.textSize = 12f
         lineChart.legend.apply {
             textSize = 12f
+            textColor = resources.getColor(R.color.black,null)
         }
         lineChart.setVisibleXRangeMaximum(min(50f,timei))
         lineChart.setTouchEnabled(true)
