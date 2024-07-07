@@ -13,11 +13,9 @@ import com.example.stockstoday.models.TopGainerAndLoserModel
 import com.example.stockstoday.network.MyApi
 import com.example.stockstoday.room.CacheDatabase
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.SharedFlow
 
 class StockRepoImpl(private val api: MyApi, private val database: CacheDatabase) : StockRepo{
-    private val apiKey2 : String = "1AD2MHUSJ390U29U"
+    private val apiKey : String = "J5RGV3OPUNJ6OCCM"
     override suspend fun updateAllGainersAndLosers(): TopGainerAndLoserModel? {
         return try{
             val response = api.getTopGainersLosers(apikey = "Demo")
@@ -37,7 +35,7 @@ class StockRepoImpl(private val api: MyApi, private val database: CacheDatabase)
 
     override suspend fun updateCompanyDetail(symbol: String): CompanyDetailModel? {
         return try {
-            val response = api.getStockDetail(symbol = symbol, apikey = apiKey2)
+            val response = api.getStockDetail(symbol = symbol, apikey = apiKey)
             if (response.isSuccessful) {
                 Log.d("@@NetworkD", response.body().toString())
                 response.body()
@@ -120,7 +118,7 @@ class StockRepoImpl(private val api: MyApi, private val database: CacheDatabase)
 
     override suspend fun updateTimeSeries(symbol: String): TimeSeriesModel? {
         return try {
-            val response = api.getStockIntraday(symbol = symbol, apikey = apiKey2)
+            val response = api.getStockIntraday(symbol = symbol, apikey = apiKey)
             if (response.isSuccessful) {
                 Log.d("@@NetworkTS", response.body().toString())
                 response.body()
@@ -159,7 +157,7 @@ class StockRepoImpl(private val api: MyApi, private val database: CacheDatabase)
 
     override suspend fun getSearchResults(query: String): SearchModel? {
         return try {
-            val response = api.searchStock(keywords = query, apikey = apiKey2)
+            val response = api.searchStock(keywords = query, apikey = apiKey)
             if(response.isSuccessful){
                 Log.d("@@NetworkS", response.body().toString())
                 return response.body()
