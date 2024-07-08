@@ -12,7 +12,7 @@ A Kotlin-based Android application for tracking stock market data, including top
 - **Data Caching:** Utilizes Room database for caching stock data to improve app performance.
 - **API Integration:** Uses Retrofit for making API calls to AlphaVantage for real-time stock data.
 <br/>
-<a href="https://www.youtube.com/watch?v=u9P1g6CTznQ">Video Link</a>
+<a href="https://youtu.be/x-Bm3Y3V7D0">Video Link</a>
 <br/>
 <a href="https://drive.google.com/file/d/1sFp2wehE9Yrwe-aPGkqtXTttgCrgoXKn/view?usp=sharing">Apk Link</a>
 <br/>
